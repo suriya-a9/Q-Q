@@ -1,0 +1,92 @@
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 66%;
+    margin-top: 75px !important;
+    margin: 0px 30px;
+}
+
+img.img.last-about-image {
+    animation: zoom-in-zoom-out 2s ease infinite;
+    width: 85%;
+    margin-top: 17px !important;
+}
+
+.owl-botoom-div {
+    border: 5px solid white;
+    background-color: white;
+    /* padding: 7px; */
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: -30px;
+}
+
+hr.bottom-div-hr {
+    margin: 0;
+    border: 0;
+    height: 5px;
+    background-color: red;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+section.about-us {
+    background-color: black;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+h2.about-us-heading {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    padding-bottom: 60px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    font-size: 51px;
+    color: white;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 32%;
+    right: 0;
+    font-size: 51px;
+    color: white;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: none;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.over-owl-caption p {
+    color: white;
+    margin: 17% 0px;
+}
+
+@media (max-width: 400px) {
+    .owl-carousel .owl-item img {
+        margin: 0px 52px;
+    }
+}
