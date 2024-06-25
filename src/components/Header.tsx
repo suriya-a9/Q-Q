@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import { Button, Offcanvas } from 'react-bootstrap';
-import { HiMenu } from 'react-icons/hi';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import { Button, Offcanvas } from "react-bootstrap";
+import { HiMenu } from "react-icons/hi";
 import "./Header.css";
 
 function Header() {
@@ -16,16 +16,17 @@ function Header() {
   };
   const bookAppoint = () => {
     navigate("/book-an-appointment");
-  }
-  window.addEventListener('scroll', function () {
-    const headers = document.querySelectorAll('.navbar');
+  };
+  window.addEventListener("scroll", function () {
+    const headers = document.querySelectorAll(".navbar");
     const scrollPos = window.scrollY;
 
-    headers.forEach(header => {
-      if (scrollPos > 100) { // Change 100 to the desired scroll position to trigger the fixed header
-        header.classList.add('header-scrolled-fixed');
+    headers.forEach((header) => {
+      if (scrollPos > 100) {
+        // Change 100 to the desired scroll position to trigger the fixed header
+        header.classList.add("header-scrolled-fixed");
       } else {
-        header.classList.remove('header-scrolled-fixed');
+        header.classList.remove("header-scrolled-fixed");
       }
     });
   });
@@ -34,14 +35,16 @@ function Header() {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <a href='/'><img src={'assets/images/q&q header logo.png'} alt='logo' /></a>
+            <a href="/">
+              <img src={"assets/images/q&q header logo.png"} alt="logo" />
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/services">Service</Nav.Link>
-              <Nav.Link href="/book-an-appointment">Booking</Nav.Link>
+              <Nav.Link href="/Q-Q/services">Service</Nav.Link>
+              <Nav.Link href="/Q-Q/book-an-appointment">Booking</Nav.Link>
               {/* <Nav.Link href="#gallery">Gallery</Nav.Link> */}
               {/* <Nav.Link href="#franchise">Franchise</Nav.Link> */}
             </Nav>
