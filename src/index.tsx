@@ -19,8 +19,8 @@ root.render(
       {/* <App /> */}
       <Route path="/welcome-page" element={<App />} />
       <Route path="/" element={<Home />} />
-      <Route path="/Q-Q/book-an-appointment" element={<Appointment />} />
-      <Route path="/Q-Q/services" element={<Services />} />
+      <Route path="/book-an-appointment" element={<Appointment />} />
+      <Route path="/services" element={<Services />} />
     </Routes>
   </HashRouter>
 );

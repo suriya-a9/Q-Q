@@ -43,8 +43,8 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Q-Q/services">Service</Nav.Link>
-              <Nav.Link href="/Q-Q/book-an-appointment">Booking</Nav.Link>
+              <Nav.Link href="/services">Service</Nav.Link>
+              <Nav.Link href="/book-an-appointment">Booking</Nav.Link>
               {/* <Nav.Link href="#gallery">Gallery</Nav.Link> */}
               {/* <Nav.Link href="#franchise">Franchise</Nav.Link> */}
             </Nav>
