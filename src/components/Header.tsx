@@ -30,6 +30,10 @@ function Header() {
       }
     });
   });
+
+  const servicePage = () => {
+    navigate("/services");
+  };
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -43,7 +47,7 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/services">Service</Nav.Link>
+              <Nav.Link onClick={servicePage}>Service</Nav.Link>
               <Nav.Link href="/book-an-appointment">Booking</Nav.Link>
               {/* <Nav.Link href="#gallery">Gallery</Nav.Link> */}
               {/* <Nav.Link href="#franchise">Franchise</Nav.Link> */}
