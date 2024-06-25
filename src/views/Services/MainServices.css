@@ -150,4 +150,8 @@ h2.main-services-heading {
     .row.main-service-second-row {
         margin-top: 0;
     }
+
+    .main-service-image {
+        width: 100%;
+    }
 }

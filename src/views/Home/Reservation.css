@@ -218,6 +218,43 @@ label.label-mobile {
 
 /**** Media Query ****/
 
+@media(min-width: 320px) and (max-width: 360px) {
+
+    .spining-image img {
+        top: 150px;
+    }
+
+    .spining-image img {
+        left: 41%;
+    }
+
+}
+
+@media(min-width: 361px) and (max-width: 400px) {
+
+    .spining-image img {
+        top: 151px;
+    }
+
+    .spining-image img {
+        left: 41%;
+    }
+
+}
+
+@media(min-width: 401px) and (max-width: 600px) {
+
+    .spining-image img {
+        top: 169px;
+    }
+
+    .spining-image img {
+        left: 40%;
+    }
+
+}
+
+
 @media (max-width : 600px) {
     .reservation p {
         display: block;
@@ -274,5 +311,61 @@ label.label-mobile {
 
     input.form-email {
         width: 100%;
+    }
+
+    .spining-image-1 img {
+        animation: rotate 10s linear 0s infinite normal none running;
+        bottom: 0;
+        /* float: right; */
+        left: 10%;
+        position: relative;
+        top: 0;
+        width: 76%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 47%;
+        position: relative;
+        top: 243px;
+        width: 15%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .spining-image-1 img {
+        animation: rotate 10s linear 0s infinite normal none running;
+        bottom: 0;
+        /* float: right; */
+        left: 15%;
+        position: relative;
+        top: 0;
+        width: 75%;
+        margin-top: 0;
+    }
+
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 45%;
+        position: relative;
+        top: 215px;
+        width: 15%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1367px) {
+
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 48%;
+        position: relative;
+        top: 260px;
+        width: 15%;
     }
 }

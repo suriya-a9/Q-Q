@@ -83,13 +83,19 @@ h3.service-sub-heading {
     animation: zoom-in-zoom-out 2s ease infinite;
 }
 
-@media(min-width: 320px) and (max-width: 600px) {
+@media(min-width: 320px) and (max-width: 360px) {
+    .fixed-div {
+        padding: 15px !important;
+    }
+}
+
+@media(min-width: 361px) and (max-width: 600px) {
     .fixed-div {
         width: 23%;
     }
 
     .fixed-div {
-        padding: 10px;
+        padding: 17px;
     }
 }
 
@@ -100,5 +106,58 @@ h3.service-sub-heading {
 
     .fixed-div {
         width: 24%;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .fixed-div {
+        position: fixed;
+        bottom: 54px;
+        display: flex;
+        width: 14%;
+        right: 47px;
+        z-index: 9999;
+        border-radius: 51px;
+        border: 5px solid white;
+        padding: 17px;
+        animation: zoom-in-zoom-out 2s ease infinite;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .service-caption {
+        border: 2px solid white;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 352px;
+    }
+
+    .fixed-div {
+        position: fixed;
+        bottom: 54px;
+        display: flex;
+        width: 9%;
+        right: 47px;
+        z-index: 9999;
+        border-radius: 51px;
+        border: 5px solid white;
+        padding: 17px;
+        animation: zoom-in-zoom-out 2s ease infinite;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1367px) {
+    .fixed-div {
+        position: fixed;
+        bottom: 54px;
+        display: flex;
+        width: 7%;
+        right: 47px;
+        z-index: 9999;
+        border-radius: 51px;
+        border: 5px solid white;
+        padding: 17px;
+        animation: zoom-in-zoom-out 2s ease infinite;
     }
 }

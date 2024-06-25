@@ -96,7 +96,8 @@
     left: 37% !important;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     top: 82% !important;
 }
 
@@ -279,7 +280,7 @@ button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
 
 @media (max-width: 360px) {
     .carousel-caption h1 {
-        font-size: 46px !important;
+        font-size: 40px !important;
         text-align: center;
     }
 }
@@ -287,6 +288,7 @@ button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
 @media (max-width: 400px) {
     section.cta::after {
         content: '';
+        display: none;
         position: absolute;
         top: 0;
         bottom: 90px !important;
@@ -299,7 +301,7 @@ button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
 
 @media (min-width: 361px) and (max-width: 600px) {
     .carousel-caption h1 {
-        font-size: 48px !important;
+        font-size: 42px !important;
         text-align: center;
     }
 }
@@ -307,6 +309,7 @@ button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
 @media (min-width: 400px) and (max-width: 600px) {
     section.cta::after {
         content: '';
+        display: none;
         position: absolute;
         top: 0;
         bottom: 180px !important;
@@ -331,4 +334,40 @@ button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
         width: 100%;
         margin: 0px 100%;
     } */
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .carousel-caption button {
+        background: transparent;
+        color: #f8ae27;
+        border: 2px solid #f8ae27;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 44%;
+        padding-top: 14px;
+        margin-top: 3%;
+        padding-bottom: 14px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 55px !important;
+        font-weight: bold;
+        font-family: "Forum", serif;
+        text-align: left;
+        margin-top: 65px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .carousel-caption button {
+        background: transparent;
+        color: #f8ae27;
+        border: 2px solid #f8ae27;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 30%;
+        padding-top: 14px;
+        margin-top: 3%;
+        padding-bottom: 14px;
+    }
 }
