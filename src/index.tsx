@@ -13,10 +13,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <HashRouter>
     <Routes>
-      {/* <App /> */}
       <Route path="/welcome-page" element={<App />} />
       <Route path="/" element={<Home />} />
       <Route path="/book-an-appointment" element={<Appointment />} />
