@@ -1,8 +1,19 @@
 import { FaPhoneAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { IoMdMail } from "react-icons/io";
 import "./Footer.css";
 
 const Footer = () => {
+    const navigate = useNavigate();
+    const servicePage = () => {
+    navigate("/services");
+  };
+  const bookingPage = () => {
+    navigate("/book-an-appointment");
+  };
+  const homePage = () => {
+    navigate("/");
+  };
     return (
         <>
             <section className="footer">
@@ -19,9 +30,9 @@ const Footer = () => {
                             <div className="footer-2">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="/" style={{ textDecoration: 'none', color: 'white' }}>Home</a></li>
-                                    <li><a href="/services" style={{ textDecoration: 'none', color: 'white' }}>Service</a></li>
-                                    <li><a href="/book-an-appointment" style={{ textDecoration: 'none', color: 'white' }}>Booking</a></li>
+                                    <li><a onClick={homePage} style={{ textDecoration: 'none', color: 'white' }}>Home</a></li>
+                                    <li><a onClick={servicePage} style={{ textDecoration: 'none', color: 'white' }}>Service</a></li>
+                                    <li><a onClick={bookingPage} style={{ textDecoration: 'none', color: 'white' }}>Booking</a></li>
                                     {/* <li><a href="#gallery" style={{ textDecoration: 'none', color: 'white' }}>GALLERY</a></li> */}
                                 </ul>
                             </div>
