@@ -34,21 +34,27 @@ function Header() {
   const servicePage = () => {
     navigate("/services");
   };
+  const bookingPage = () => {
+    navigate("/book-an-appointment");
+  };
+  const homePage = () => {
+    navigate("/");
+  };
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <a href="/">
+            <a onClick={homePage}>
               <img src={"assets/images/q&q header logo.png"} alt="logo" />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link onClick={homePage}>Home</Nav.Link>
               <Nav.Link onClick={servicePage}>Service</Nav.Link>
-              <Nav.Link href="/book-an-appointment">Booking</Nav.Link>
+              <Nav.Link onClick={bookingPage}>Booking</Nav.Link>
               {/* <Nav.Link href="#gallery">Gallery</Nav.Link> */}
               {/* <Nav.Link href="#franchise">Franchise</Nav.Link> */}
             </Nav>
