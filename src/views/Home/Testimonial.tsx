@@ -96,7 +96,7 @@ const TestimonialCarousel = () => {
             <Row>
               <Col>
                 <div className="div-testimonial-image">
-                  <img src={"assets/images/testi-1.webp"} alt="img" />
+                  <img src={"assets/images/testi-3.webp"} alt="img" />
                 </div>
               </Col>
               <Col>
@@ -151,12 +151,7 @@ const TestimonialCarousel = () => {
             <Row>
               <Col>
                 <div className="div-testimonial-image">
-                  <img
-                    src={
-                      "assets/images/portrait-brutal-bearded-man-sunglasses-dark-photo-studio.jpg"
-                    }
-                    alt="img"
-                  />
+                  <img src={"assets/images/testi-3.jpg"} alt="img" />
                 </div>
               </Col>
               <Col>
