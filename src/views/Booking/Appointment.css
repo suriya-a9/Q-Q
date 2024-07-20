@@ -40,6 +40,14 @@ button.time-button {
     width: 100px;
 }
 
+button.date-button.selected-date {
+    border: 2px solid red !important;
+}
+
+button.time-button.selected-time {
+    border: 2px solid red !important;
+}
+
 @media (max-width: 600px) {
     section.appointment-section {
         padding-top: 53%;
