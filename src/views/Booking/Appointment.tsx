@@ -83,15 +83,12 @@ const Appointment = () => {
 
     // Function to generate an array of dates for the current week
     const getCurrentWeekDates = () => {
-        const startDate = getStartOfWeek(new Date());
-        const today = new Date(); // Get today's date
+        const today = new Date();
         const dates = [];
         for (let i = 0; i < 7; i++) {
-            const currentDate = new Date(startDate);
-            currentDate.setDate(startDate.getDate() + i);
-            // Disable dates that are in the past
-            const isDisabled = currentDate < today;
-            dates.push({ date: currentDate.toISOString().split('T')[0], disabled: isDisabled });
+            const currentDate = new Date();
+            currentDate.setDate(today.getDate() + i);
+            dates.push(currentDate.toISOString().split('T')[0]);
         }
         return dates;
     };
@@ -134,11 +131,10 @@ const Appointment = () => {
                                     <label htmlFor="date" className="laebl-date" style={{ width: '100%', color: 'white', paddingBottom: '15px', paddingTop: '15px' }}>Date
                                     </label>
                                     <div className="date-button-div" style={{width:'100%'}}>
-                                        {getCurrentWeekDates().map(({ date, disabled }) => (
+                                        {getCurrentWeekDates().map((date) => (
                                             <button
                                                 key={date}
                                                 onClick={() => setSelectedDate(date)}
-                                                disabled={disabled}
                                                 className={`date-button ${selectedDate === date ? 'selected-date' : ''}`}
                                                 style={{
                                                     margin: "5px",
@@ -148,7 +144,6 @@ const Appointment = () => {
                                                     borderRadius: "4px",
                                                     cursor: "pointer",
                                                     outline: "none",
-                                                    opacity: disabled ? 0.5 : 1, // Dim the button if disabled
                                                 }}
                                                 type="button"
                                             >
