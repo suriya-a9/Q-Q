@@ -1,0 +1,45 @@
+.insta:hover img {
+    border-radius: 0px !important;
+    margin-left: 15px;
+    transition: ease-out 250ms;
+}
+
+/* .insta img {
+    border-radius: 10px;
+}
+
+.facebook img {
+    border-radius: 10px;
+}
+
+.twitter img {
+    border-radius: 10px;
+} */
+
+.insta {
+    width: 3%;
+}
+
+.facebook:hover img {
+    border-radius: 0px !important;
+    margin-left: 15px;
+    transition: ease-out 250ms;
+}
+
+.facebook {
+    width: 3%;
+}
+
+.twitter:hover img {
+    border-radius: 0px !important;
+    margin-left: 15px;
+    transition: ease-out 250ms;
+}
+
+.twitter {
+    width: 3%;
+}
+
+.footer-1 h4 {
+    color: white;
+}

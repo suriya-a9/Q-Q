@@ -1,0 +1,371 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h1.reservation-image-header {
+    text-align: center;
+    color: white;
+    font-family: auto;
+    /* border: 1px solid red; */
+    padding-top: 15px;
+    padding-bottom: 7px;
+    margin: 45px 10%;
+    border-bottom: 2px solid #f8ae27;
+}
+
+.reservation-image img {
+    width: 50%;
+    margin: 15% 25%;
+}
+
+h1.reservation-image-header-1 {
+    text-align: center;
+    color: white;
+    font-family: auto;
+    /* border: 1px solid red; */
+    padding-top: 15px;
+    padding-bottom: 7px;
+    margin: 15px 23%;
+    margin-top: 44px;
+    border-bottom: 2px solid #f8ae27;
+}
+
+.reservation p {
+    display: flex;
+    /* margin: 0px 17%; */
+    color: white;
+}
+
+section.reservation-section {
+    background-color: black;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 0px;
+}
+
+input.form-name {
+    border: 3px solid #1f1f1f;
+    background: #1f1f1f;
+    padding-left: 26px;
+    padding-right: 15px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input.form-mobile {
+    border: 3px solid #1f1f1f;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 15px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-left: 62px; */
+}
+
+input.form-email {
+    border: 3px solid #1f1f1f;
+    background: #1f1f1f;
+    color: white;
+    padding-left: 20px;
+    padding-right: 15px;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin-left: 62px; */
+}
+
+.form-second-div svg {
+    color: white;
+    background: #1b1c1e;
+    height: 45px;
+    margin-top: -5px;
+    padding-left: 12px;
+    width: 32px;
+}
+
+.form-second-div select {
+    border: 1px solid #1b1c1e;
+    background: #1b1c1e;
+    padding-left: 22px;
+    padding-right: 44px;
+    /* width: 102%; */
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.form-second-div {
+    margin-top: 25px;
+}
+
+input[type="date"] {
+    border: 1px solid #1b1c1e;
+    background: #1b1c1e;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* width: 125%; */
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+    margin-left: 45px;
+}
+
+textarea {
+    height: 122px;
+    width: 100%;
+    margin-top: 25px;
+    border: 3px solid #1f1f1f;
+    background: #1f1f1f;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* width: 125%; */
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #ed1846;
+    border: 3px solid #f05072;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: white;
+    border-radius: 30px;
+}
+
+.spining-image img {
+    bottom: 0;
+    /* float: right; */
+    left: 47%;
+    position: relative;
+    top: 300px;
+    width: 15%;
+}
+
+.spining-image-1 img {
+    animation: rotate 10s linear 0s infinite normal none running;
+    bottom: 0;
+    /* float: right; */
+    left: 15%;
+    position: relative;
+    top: 0;
+    width: 80%;
+    margin-top: 0;
+}
+
+input.form-name::placeholder {
+    color: white;
+}
+
+input.form-email::placeholder {
+    color: white;
+}
+
+input.form-mobile::placeholder {
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+/* 
+.Toastify__toast-theme--light {
+    margin-top: 20%;
+} */
+
+h2.contact-form-heading {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+label.label-email {
+    width: 100%;
+}
+
+label.label-name {
+    width: 100%;
+}
+
+label.label-message {
+    width: 100%;
+}
+
+label.label-mobile {
+    width: 100%;
+}
+
+/**** Media Query ****/
+
+@media(min-width: 320px) and (max-width: 360px) {
+
+    .spining-image img {
+        top: 150px;
+    }
+
+    .spining-image img {
+        left: 41%;
+    }
+
+}
+
+@media(min-width: 361px) and (max-width: 400px) {
+
+    .spining-image img {
+        top: 151px;
+    }
+
+    .spining-image img {
+        left: 41%;
+    }
+
+}
+
+@media(min-width: 401px) and (max-width: 600px) {
+
+    .spining-image img {
+        top: 169px;
+    }
+
+    .spining-image img {
+        left: 40%;
+    }
+
+}
+
+
+@media (max-width : 600px) {
+    .reservation p {
+        display: block;
+        text-align: center;
+    }
+
+    /* input.form-name {
+        width: 87%;
+    } */
+
+    /* input.form-email {
+        width: 92%;
+        margin-left: 13px;
+    } */
+
+    /* input[type="date"] {
+        width: 90%;
+        margin-left: -1px;
+        margin-top: 5%;
+    }
+
+    label.label-select-time {
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+
+    label.laebl-date {
+        width: 216px;
+    } */
+
+    label.grape-label {
+        width: 200px;
+    }
+
+    h1.reservation-image-header-1 {
+        margin: 15px 17%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%
+    }
+
+    input.form-name {
+        width: 100%;
+    }
+
+    input.form-mobile {
+        width: 100%;
+    }
+
+    input.form-email {
+        width: 100%;
+    }
+
+    .spining-image-1 img {
+        animation: rotate 10s linear 0s infinite normal none running;
+        bottom: 0;
+        /* float: right; */
+        left: 10%;
+        position: relative;
+        top: 0;
+        width: 76%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 47%;
+        position: relative;
+        top: 243px;
+        width: 15%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .spining-image-1 img {
+        animation: rotate 10s linear 0s infinite normal none running;
+        bottom: 0;
+        /* float: right; */
+        left: 15%;
+        position: relative;
+        top: 0;
+        width: 75%;
+        margin-top: 0;
+    }
+
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 45%;
+        position: relative;
+        top: 215px;
+        width: 15%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1367px) {
+
+    .spining-image img {
+        bottom: 0;
+        /* float: right; */
+        left: 48%;
+        position: relative;
+        top: 260px;
+        width: 15%;
+    }
+}

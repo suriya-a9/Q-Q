@@ -1,0 +1,373 @@
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.carousel-caption h1 {
+    font-size: 70px !important;
+    font-weight: bold;
+    font-family: "Forum", serif;
+    text-align: left;
+    margin-top: 65px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    top: 9%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    top: 95px;
+    z-index: 2;
+}
+
+.carousel-caption h4 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #f8ae27;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.carousel-caption button {
+    background: transparent;
+    color: #f8ae27;
+    border: 2px solid #f8ae27;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 26%;
+    padding-top: 14px;
+    margin-top: 3%;
+    padding-bottom: 14px;
+}
+
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    /* transform: rotate(-45deg); */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    /* transform: rotate(-45deg); */
+}
+
+.carousel-control-next {
+    right: 37% !important;
+}
+
+.carousel-control-prev {
+    left: 37% !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 82% !important;
+}
+
+/* .carousel-control-prev {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    font-size: 2.4rem;
+    width: 45px !important;
+    height: 45px;
+    place-items: center;
+    top: 50% !important;
+    border-radius: 10px;
+    left: 25px !important;
+    transform: translateY(-50%) rotate(45deg);
+    border: 2px solid #f8ae27 !important;
+    padding-bottom: 0;
+    padding-top: 4px !important;
+    padding-right: 4px !important;
+}
+
+.carousel-control-next {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    font-size: 2.4rem;
+    width: 45px !important;
+    height: 45px;
+    place-items: center;
+    top: 50% !important;
+    border-radius: 10px;
+    right: 25px !important;
+    transform: translateY(-50%) rotate(45deg);
+    border: 2px solid #f8ae27 !important;
+    padding-bottom: 7px !important;
+    padding-left: 7px !important;
+} */
+
+/* button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive:hover {
+    background-position: left !important;
+    color: #731702;
+} */
+
+button.fadeInBottom.fadeInBottomBtn.fadeInBottomActive {
+    border-radius: 30px;
+    background-color: #ed1846;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid #f05072;
+    float: left;
+}
+
+/* .active.carousel-item img.banner-image {
+    animation: zoom 20s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes fadeInBottomH4 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottomH1 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottomP {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInBottom {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInBottomH4 {
+    animation-name: fadeInBottomH4;
+    animation-delay: 0.5s;
+    /* Adjust the delay as needed */
+}
+
+.typing {
+    animation-name: fadeInBottomH4;
+    animation-delay: 0.5s;
+    /* Adjust the delay as needed */
+}
+
+.fadeInBottomH1 {
+    animation-name: fadeInBottomH1;
+    animation-delay: 1s;
+    /* Adjust the delay as needed */
+}
+
+.fadeInBottomP {
+    animation-name: fadeInBottomP;
+    animation-delay: 1.5s;
+    color: white;
+    /* Adjust the delay as needed */
+}
+
+@keyframes fadeInBottomImg {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottomBtn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInBottomImg {
+    animation-name: fadeInBottomImg;
+    animation-delay: 0.5s;
+    /* Adjust the delay as needed */
+}
+
+.fadeInBottomBtn {
+    animation-name: fadeInBottomBtn;
+    animation-delay: 2s;
+    /* Adjust the delay as needed */
+}
+
+.fadeInBottomActive {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running !important;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.6;
+}
+
+/***** Media Query *****/
+
+@media (max-width: 360px) {
+    .carousel-caption h1 {
+        font-size: 40px !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    section.cta::after {
+        content: '';
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 90px !important;
+        right: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.6;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+    .carousel-caption h1 {
+        font-size: 42px !important;
+        text-align: center;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    section.cta::after {
+        content: '';
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 180px !important;
+        right: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width : 600px) {
+    .carousel-caption button {
+        width: 88%;
+        float: none !important;
+    }
+
+    .carousel-caption {
+        margin-top: 20%;
+    }
+
+    /* a.navbar-brand img {
+        width: 100%;
+        margin: 0px 100%;
+    } */
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .carousel-caption button {
+        background: transparent;
+        color: #f8ae27;
+        border: 2px solid #f8ae27;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 44%;
+        padding-top: 14px;
+        margin-top: 3%;
+        padding-bottom: 14px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 55px !important;
+        font-weight: bold;
+        font-family: "Forum", serif;
+        text-align: left;
+        margin-top: 65px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .carousel-caption button {
+        background: transparent;
+        color: #f8ae27;
+        border: 2px solid #f8ae27;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 30%;
+        padding-top: 14px;
+        margin-top: 3%;
+        padding-bottom: 14px;
+    }
+}

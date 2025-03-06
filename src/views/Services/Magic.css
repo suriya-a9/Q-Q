@@ -1,0 +1,60 @@
+@keyframes slideFromMiddle {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+section.Magic .slick-slide {
+    transition: transform 0.5s ease-in-out;
+}
+
+section.Magic .slick-active {
+    animation: slideFromMiddle 0.5s ease-in-out;
+}
+
+
+section.Magic {
+    background: black;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+h2.our-magic-heading {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: black;
+    font-size: 42px;
+    padding-bottom: 70px;
+}
+
+.Magic .slick-next:before {
+    font-size: 25px;
+}
+
+.Magic .slick-prev:before {
+    font-size: 25px;
+}
+
+@media(max-width: 600px) {
+    .slick-prev {
+        left: 0px;
+        z-index: 999999;
+    }
+
+    .slick-next {
+        right: 0px;
+        z-index: 999999;
+    }
+}

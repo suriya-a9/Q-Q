@@ -1,0 +1,83 @@
+section.cta {
+    background-image: url("C:/my-app/public/assets/images/cta-banner.webp");
+    height: 700px;
+    margin-top: 5%;
+    background-size: cover;
+}
+
+/* section.cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0.6;
+} */
+
+.cta-div h4 {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    font-size: 35px;
+}
+
+.cta-div button {
+    background-color: #ed1846;
+    color: white;
+    border-radius: 48px;
+    border: 3px solid #f05072;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 33px;
+    margin: 0px 38%;
+    margin-top: 6%;
+}
+
+@media (max-width: 600px) {
+    .cta-div button {
+        margin: 0;
+        margin-top: 15%;
+        margin-left: 15%;
+    }
+
+    .cta-div h4 {
+        margin-top: 45%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .cta-div button {
+        background-color: #ed1846;
+        color: white;
+        border-radius: 48px;
+        border: 3px solid #f05072;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 33px;
+        margin: 0px 25%;
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+
+    .cta-div button {
+        background-color: #ed1846;
+        color: white;
+        border-radius: 48px;
+        border: 3px solid #f05072;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 33px;
+        margin: 0px 36%;
+        margin-top: 6%;
+    }
+}
